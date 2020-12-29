@@ -1,5 +1,5 @@
 import './App.css';
-import { adding, subtracting, fetch_data } from './actions/actions';
+import { adding, subtracting, fetch_data } from './actions';
 import { useDispatch, useSelector } from 'react-redux';
 
 function App() {

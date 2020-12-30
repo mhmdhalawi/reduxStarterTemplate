@@ -18,20 +18,22 @@ function App() {
   }
   return (
     <div className="App">
-      <h1 className="text-primary">Hello</h1>
-      <button className="btn btn-primary" onClick={addition}>
+      <h1 className="text-blue-500">Hello</h1>
+      <button className="btn-main  bg-blue-500 hover:bg-blue-600" onClick={addition}>
         +
       </button>
-      <p className={count < 0 ? 'text-danger' : 'text-primary'}>{count}</p>
-      <button className="btn btn-danger" onClick={subtraction}>
+      <p className={count < 0 ? 'text-red-600 font-bold' : 'text-blue-600 font-bold'}>{count}</p>
+      <button className="btn-main bg-red-500 hover:bg-red-600" onClick={subtraction}>
         -
       </button>
-      <div className="d-flex justify-content-center align-items-center flex-column">
-        <button className="btn btn-info" onClick={getData}>
+      <div className="flex flex-col justify-center items-center">
+        <button className="btn-main bg-indigo-500 hover:bg-indigo-600" onClick={getData}>
           fetch
         </button>
-        <h2 className="text-primary">{data && data[0].name}</h2>
+        <h2 className="text-blue-400 font-medium ">{data && data[0].name}</h2>
       </div>
+
+      <button className="btn-main bg-red-500 hover:bg-red-600">test</button>
     </div>
   );
 }
